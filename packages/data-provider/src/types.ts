@@ -310,6 +310,7 @@ export type TStartupConfig = {
   publicSharedLinksEnabled: boolean;
   analyticsGtmId?: string;
   instanceProjectId: string;
+  steedosLoginEnabled: boolean;
 };
 
 export type TRefreshTokenResponse = {

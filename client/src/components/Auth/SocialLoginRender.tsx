@@ -1,4 +1,4 @@
-import { GoogleIcon, FacebookIcon, OpenIDIcon, GithubIcon, DiscordIcon } from '~/components';
+import { GoogleIcon, FacebookIcon, OpenIDIcon, GithubIcon, DiscordIcon, SteedosIcon } from '~/components';
 
 import SocialButton from './SocialButton';
 
@@ -49,6 +49,17 @@ function SocialLoginRender({
         Icon={GithubIcon}
         label={localize('com_auth_github_login')}
         id="github"
+      />
+    ),
+    steedos: startupConfig?.steedosLoginEnabled && (
+      <SocialButton
+        key="steedos"
+        enabled={startupConfig.steedosLoginEnabled}
+        serverDomain={startupConfig.serverDomain}
+        oauthPath="steedos"
+        Icon={SteedosIcon}
+        label={localize('com_auth_steedos_login')}
+        id="steedos"
       />
     ),
     google: startupConfig?.googleLoginEnabled && (

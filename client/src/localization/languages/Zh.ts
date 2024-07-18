@@ -167,6 +167,7 @@ export default {
   com_auth_sign_up: '注册',
   com_auth_sign_in: '登录',
   com_auth_google_login: '使用 Google 登录',
+  com_auth_steedos_login: '使用 Steedos 登录',
   com_auth_facebook_login: '使用 Facebook 登录',
   com_auth_github_login: '使用 GitHub 登录',
   com_auth_discord_login: '使用 Discord 登录',
@@ -1202,6 +1203,10 @@ export const comparisons = {
   com_auth_google_login: {
     english: 'Continue with Google',
     translated: '使用 Google 登录',
+  },
+  com_auth_steedos_login: {
+    english: 'Continue with Steedos',
+    translated: '使用 Steedos 登录',
   },
   com_auth_facebook_login: {
     english: 'Continue with Facebook',

@@ -1,0 +1,47 @@
+{
+  "name": "passport-steedos-oauth2",
+  "version": "2.0.0",
+  "description": "Steedos (OAuth 2.0) authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "steedos",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/steedos/passport-steedos-oauth2.git"
+  },
+  "bugs": {
+    "url": "http://github.com/steedos/passport-steedos-oauth2/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/steedos"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-oauth2": "1.x.x"
+  },
+  "devDependencies": {
+    "make-node": "0.4.6",
+    "mocha": "2.x.x",
+    "chai": "2.x.x",
+    "chai-passport-strategy": "1.x.x"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "mocha --require ./test/bootstrap/node --recursive"
+  }
+}

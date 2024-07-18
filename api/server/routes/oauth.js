@@ -50,6 +50,29 @@ router.get(
   oauthHandler,
 );
 
+/**
+ * Steedos Routes
+ */
+
+router.get(
+  '/steedos',
+  passport.authenticate('steedos', {
+    scope: ['openid', 'profile', 'email'],
+    session: false,
+  }),
+);
+
+router.get(
+  '/steedos/callback',
+  passport.authenticate('steedos', {
+    failureRedirect: `${domains.client}/login`,
+    failureMessage: true,
+    session: false,
+    scope: ['openid', 'profile', 'email'],
+  }),
+  oauthHandler,
+);
+
 router.get(
   '/facebook',
   passport.authenticate('facebook', {

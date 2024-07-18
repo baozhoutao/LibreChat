@@ -615,6 +615,10 @@ Write a prompt that is mindful of the nuances in the language with respect to it
   - **english**: Continue with Github
   - **translated**: 使用 GitHub 登录
 
+- **com_auth_steedos_login**:
+  - **english**: Continue with Steedos
+  - **translated**: 使用 Steedos 登录
+
 - **com_auth_discord_login**:
   - **english**: Continue with Discord
   - **translated**: 使用 Discord 登录

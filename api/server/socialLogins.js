@@ -8,6 +8,7 @@ const {
   githubLogin,
   discordLogin,
   facebookLogin,
+  steedosLogin,
 } = require('~/strategies');
 const { logger } = require('~/config');
 
@@ -17,8 +18,15 @@ const { logger } = require('~/config');
  */
 const configureSocialLogins = (app) => {
   if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
+    console.log('passport===>google');
     passport.use(googleLogin());
   }
+
+  if (process.env.STEEDOS_CLIENT_ID && process.env.STEEDOS_CLIENT_SECRET) {
+    console.log('passport===>steedos');
+    passport.use(steedosLogin());
+  }
+
   if (process.env.FACEBOOK_CLIENT_ID && process.env.FACEBOOK_CLIENT_SECRET) {
     passport.use(facebookLogin());
   }
